@@ -1,8 +1,8 @@
 import express from "express";
-import helloWorldRoutes from "../../modules/hello-world/hello-world.route";
+import projectRouter from "../../modules/project/project.routes";
 
 const router = express.Router();
 
-router.use("/hello-world", helloWorldRoutes);
+router.use("/project", projectRouter);
 
 export default router;

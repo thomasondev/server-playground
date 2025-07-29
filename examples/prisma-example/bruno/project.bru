@@ -1,0 +1,19 @@
+meta {
+  name: project
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/v1/project?name=collaborate
+  body: none
+  auth: inherit
+}
+
+params:query {
+  name: collaborate
+}
+
+settings {
+  encodeUrl: true
+}
